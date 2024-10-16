@@ -51,7 +51,7 @@ nav_order: 3
     </tr>
     <tr>
         <td><strong>IS modeling (Unified Modeling Language)</strong><br />(2nd Year IAE Management)</td>
-        <td>18h (<em>Lab</em>)</td>
+        <td>18h (<em>Tutorial</em>)</td>
     </tr>
 </table>
 </body>
