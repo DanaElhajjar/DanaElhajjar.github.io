@@ -6,7 +6,7 @@ subtitle: PhD Student at <a href='https://www.univ-smb.fr/en/'>University of Sav
 
 profile:
   align: right
-  image: prof_pic.jpeg
+  image: home_pic.jpeg
   image_circular: false # crops the image to make it circular
 
 
