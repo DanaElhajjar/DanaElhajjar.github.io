@@ -1,25 +1,24 @@
 ---
-layout: about
-title: about
+layout: About
+title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: <a href='#'>PhD Student</a> at [University Savoie Mont Blanc] (https://www.univ-smb.fr/)
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic.jpeg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
+
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I joined the [LISTIC](https://www.univ-smb.fr/listic/en/) laboratory ([University Savoie Mont Blanc] (https://www.univ-smb.fr/)) and the [L2S](https://l2s.centralesupelec.fr/en/) ([CentraleSupélec, University Paris-Saclay](https://www.centralesupelec.fr/)) in December 2022 as a PhD student under the supervision of [Yajing YAN](https://www.univ-smb.fr/listic/pages-fr/yajing-yan-fr/), [Mohammed Nabil El Korso](https://l2s.centralesupelec.fr/en/u/el-korso-mohammed-nabil/) and [Guillaume Ginolhac](https://www.univ-smb.fr/listic/presentation/membres/enseignants-chercheurs/guillaume-ginolhac/).
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+
+I am interested in the potential of regular Sentinel-1 A/B SAR images, as they offer both opportunities and challenges for scientists monitoring Earth deformation through SAR image time series. The primary goal of my PhD thesis is to develop a novel, robust, and sequential Multi-Temporal Interferometric Synthetic Aperture Radar (MT-InSAR) approach that takes into account the structure of the covariance matrix and temporal decorrelation models, thereby enhancing the efficiency of the Phase Linking method. This proposed methodology will deepen our understanding of Earth deformation through SAR image time series and provide valuable insights for operational monitoring.
