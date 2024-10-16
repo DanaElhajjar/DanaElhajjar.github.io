@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://DanaElhajjaR.github.io/sitemap.xml
+Sitemap: https://DanaElhajjar.github.io/sitemap.xml
