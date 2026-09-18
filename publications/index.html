@@ -211,13 +211,6 @@
                                                             <a href="https://github.com/DanaElHajjar/" class="btn btn-sm z-depth-0" role="button">Code</a> 
                                                             <a href="https://fringe2026.esa.int/iframe-agenda/files/ID_184.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Slides</a> 
                                                       </div> 
-                                                      <style>
-                                                        #fringe2026-abstract:not(.hidden) {
-                                                          max-height: none !important;
-                                                          overflow: visible !important;
-                                                          height: auto !important;
-                                                        }
-                                                      </style>
                                                       <div id="fringe2026-abstract" class="abstract hidden"> 
                                                             <p>Synthetic Aperture Radar Interferometry (InSAR) has become a cornerstone technique for the precise measurement of Earth's surface deformation, enabling millimetric monitoring of phenomena such as urban subsidence, volcanic activity, and landslides. By exploiting the phase differences between radar acquisitions performed at different times, InSAR provides highly sensitive deformation measurements over wide areas and under nearly all weather conditions. The advent of systematic satellite missions such as Sentinel-1 has dramatically increased data availability, with free and frequent acquisitions every 6 to 12 days, leading to the generation of dense and high-dimensional SAR time series. While this abundance of data offers unprecedented opportunities for detailed temporal analysis of ground deformation, it also raises major challenges in terms of computational cost, memory requirements, and processing flexibility. Traditional Multi-Temporal InSAR (MT-InSAR) approaches rely predominantly on so-called offline processing strategies, in which all SAR images in a time series are processed jointly. Although these methods are known for their statistical robustness and estimation accuracy, they suffer from several limitations. First, they exhibit high algorithmic complexity, often scaling cubically with the number of acquisitions. Second, they require significant memory resources to store and manipulate large covariance matrices. Third, they lack flexibility when new acquisitions become available, since integrating additional images typically requires reprocessing the entire time series. These constraints limit their applicability in operational contexts where near-real-time monitoring of continuously evolving deformation phenomena is required.</p>
 
@@ -234,8 +227,32 @@
                                                             <p>The proposed approaches were validated on both simulated datasets and real SAR time series processed through a complete multi-temporal InSAR chain, including co-registration, interferogram formation, topographic phase correction, phase unwrapping, and line-of-sight displacement estimation. Two contrasted case studies were considered: an urban area affected by significant land subsidence in Mexico City, and a volcanic environment in Hawaii Island. The results demonstrate that the sequential methods achieve mean squared errors and deformation time series estimates comparable to those obtained with reference offline approaches. Furthermore, comparisons with independent GPS measurements, when available, confirm the geophysical consistency of the estimated displacements. From a computational standpoint, the benefits of the proposed sequential framework are substantial. Processing times and memory consumption are significantly reduced, enabling incremental updates of deformation time series as soon as new SAR acquisitions become available.</p>
                                                             
                                                             <p>In summary, this work provides a comprehensive and coherent set of sequential methodologies for interferometric phase estimation in multi-temporal SAR analysis. By combining statistical robustness, optimization on complex manifolds, and efficient incremental updates, the proposed approaches address the growing challenges posed by dense and long SAR time series. They bridge the gap between high-accuracy offline processing and the practical requirements of scalable, near-real-time Earth deformation monitoring.</p>
-
                                                       </div>
+                                                      <script>
+document.addEventListener('DOMContentLoaded', function () {
+  var box = document.getElementById('fringe2026-abstract');
+  if (!box) return;
+
+  var container = box.closest('.col-sm-8');
+  var btn = container ? container.querySelector('a.abstract') : null;
+  if (!btn) return;
+
+  btn.addEventListener('click', function () {
+    setTimeout(function () {
+      var visible = box.offsetHeight > 0 && window.getComputedStyle(box).display !== 'none';
+      if (visible) {
+        box.style.setProperty('max-height', 'none', 'important');
+        box.style.setProperty('overflow', 'visible', 'important');
+        box.style.setProperty('height', 'auto', 'important');
+      } else {
+        box.style.removeProperty('max-height');
+        box.style.removeProperty('overflow');
+        box.style.removeProperty('height');
+      }
+    }, 50);
+  });
+});
+</script>
                                                 </div> 
                                           </div> 
                                     </li>
